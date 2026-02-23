@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <div>
+      <h1>23/02/26</h1>
       <ol>
         <li>João Guilherme</li>
         <li>José Lorenzo</li>

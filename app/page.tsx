@@ -1,6 +1,10 @@
+import Image from "next/image";
+import foto from "./pro-260223.jpeg";
+
 export default function Home() {
   return (
     <div>
+      <Image src={foto.src} width={foto.width} height={foto.height} alt="foto" className="w-100" />
       <h1>23/02/26</h1>
       <ol>
         <li>João Guilherme</li>

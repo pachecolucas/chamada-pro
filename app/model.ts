@@ -98,6 +98,27 @@ export const DIAS: Dia[] = [
       E.fabrizio_astrada,
     ],
   },
+  {
+    data: "2026-03-16",
+    estudantes: [
+      E.railson_de_oliveira_silva,
+      E.joao_guilherme,
+      E.edson_hagmayer,
+      E.amanda_dos_santos_daros,
+      E.jhon_vitor_medeiros,
+      E.sabrina_da_silva_sobral,
+      E.joao_vitor_marcolino_veiga,
+      E.tiago_bugalho,
+      E.isabelly_marques,
+      E.rafa_verde,
+      E.elias_caleb,
+      E.mateus_collet_lacerda_machado,
+      E.pedro_ferreira_nunes_neto,
+      E.kleberson_dos_santos,
+      E.fabrizio_astrada,
+      E.leandro_bugalho,
+    ],
+  },
 ];
 
 console.log(DIAS);

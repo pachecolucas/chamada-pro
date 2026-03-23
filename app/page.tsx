@@ -2,10 +2,29 @@ import Image from "next/image";
 import foto from "./pro-260223.jpeg";
 import { DIAS, E } from "./model";
 
-export default function Home() {
+import { drizzle } from "drizzle-orm/postgres-js";
+import postgres from "postgres";
+
+const connectionString = process.env.DATABASE_URL as string;
+
+const connection = postgres(connectionString, { prepare: false });
+
+export const db = drizzle(connection);
+
+export default async function Home() {
+  await db.execute("DELETE FROM estudante WHERE id IN (8, 9)");
+  // await db.execute("UPDATE estudante SET nome='Pedro Rosa' WHERE id=4");
+  // await db.execute("INSERT INTO estudante (nome) VALUES ('Antônio Carlos')");
+  const estudantes = await db.execute("SELECT * FROM estudante ORDER BY id");
+
   return (
     <div>
       <h1>Chamadas ELITI PRO 2026</h1>
+      {estudantes.map((e) => (
+        <p key={e.id}>
+          {e.id} {e.nome}
+        </p>
+      ))}
       <table>
         <thead>
           <tr>

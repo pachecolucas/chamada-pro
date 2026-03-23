@@ -1,10 +1,10 @@
+type Estudante = {
+  nome: string;
+};
+
 type Dia = {
   data: string;
   estudantes: Estudante[];
-};
-
-type Estudante = {
-  nome: string;
 };
 
 export const E: Record<string, Estudante> = {
@@ -30,6 +30,7 @@ export const E: Record<string, Estudante> = {
   sabrina_da_silva_sobral: { nome: "Sabrina da Silva Sobral" },
   railson_de_oliveira_silva: { nome: "Railson de Oliveira Silva" },
   rafa_verde: { nome: "Rafa Verde" },
+  joao_kalebe_carneiro_reis_costa: { nome: "João Kalebe Carneiro Reis Costa" },
 };
 
 export const DIAS: Dia[] = [
@@ -117,6 +118,23 @@ export const DIAS: Dia[] = [
       E.kleberson_dos_santos,
       E.fabrizio_astrada,
       E.leandro_bugalho,
+    ],
+  },
+  {
+    data: "2026-03-23",
+    estudantes: [
+      E.joao_guilherme,
+      E.edson_hagmayer,
+      E.joao_vitor_marcolino_veiga,
+      E.amanda_dos_santos_daros,
+      E.jhon_vitor_medeiros,
+      E.tiago_bugalho,
+      E.mateus_collet_lacerda_machado,
+      E.joao_pedro_mello,
+      E.igor_da_silva_dias,
+      E.sabrina_da_silva_sobral,
+      E.railson_de_oliveira_silva,
+      E.joao_kalebe_carneiro_reis_costa,
     ],
   },
 ];

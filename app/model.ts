@@ -137,6 +137,25 @@ export const DIAS: Dia[] = [
       E.joao_kalebe_carneiro_reis_costa,
     ],
   },
+  {
+    data: "2026-03-30",
+    estudantes: [
+      E.amanda_dos_santos_daros,
+      E.edson_hagmayer,
+      E.elias_caleb,
+      E.isabelly_marques,
+      E.jhon_vitor_medeiros,
+      E.joao_kalebe_carneiro_reis_costa,
+      E.joao_pedro_mello,
+      E.joao_vitor_marcolino_veiga,
+      E.kleberson_dos_santos,
+      E.mateus_collet_lacerda_machado,
+      E.rafa_verde,
+      E.railson_de_oliveira_silva,
+      E.sabrina_da_silva_sobral,
+      E.tiago_bugalho,
+    ],
+  },
 ];
 
 console.log(DIAS);
